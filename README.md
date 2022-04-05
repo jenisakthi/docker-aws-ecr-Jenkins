@@ -28,3 +28,9 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 
 # install git
 yum install git -y
+
+
+# reguired plugins
+SSH Agent 
+Version
+1.24.1
