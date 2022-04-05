@@ -34,3 +34,12 @@ yum install git -y
 SSH Agent 
 Version
 1.24.1
+
+# steps
+## on jenkins
+- install aws
+- install docker
+- install jenkins
+- install git
+- `aws configure` ( configure for ecr region) 
+- docker login for aws container registery 
