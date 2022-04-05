@@ -37,9 +37,24 @@ Version
 
 # steps
 ## on jenkins
-- install aws
-- install docker
+- install aws (both server)
+- install docker (both server)
 - install jenkins
 - install git
 - `aws configure` ( configure for ecr region) 
 - docker login for aws container registery 
+- login to git
+      - click profile icon
+      - settings
+      - developer settings
+      - create a new personal access token
+- go to git repo of application code (dockerfile)
+- click settings ( gear icon)
+- go to webhook integration
+- added url `https://{jenkins server ip}:port/github-webhook/`
+- login to jenkins
+- create codepipeline project
+- general project - git (provide url of project application- dockerfile)
+- build trigger - gitscm polling
+- in build settings - url of cicd pipeline , provide cicd file name , branch
+- 
