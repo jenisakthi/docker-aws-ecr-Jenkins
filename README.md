@@ -10,7 +10,7 @@ sudo yum install jenkins -y
 sudo systemctl daemon-reload
 
 
-# docker installation
+# docker installation ( on both machine)
 
  sudo yum install -y yum-utils
  sudo yum-config-manager \
@@ -19,7 +19,7 @@ sudo systemctl daemon-reload
 sudo yum install docker-ce docker-ce-cli containerd.io -y 
 sudo systemctl start docker
 
-# aws cli
+# aws cli ( on both machine) 
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
